@@ -1,2 +1,2 @@
 # badstudy
-ttps://revoltkir.github.io/badstudy/webdev/
+https://revoltkir.github.io/badstudy/webdev/
