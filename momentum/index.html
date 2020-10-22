@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Digital Clock With Date</title>
+    <link rel="stylesheet" href="owfont-regular.css">
+    <link rel="stylesheet" href="style.css">
+
+
+  </head>
+  <body onload="initClock()">
+    <div class="qq">
+
+      <figure class="quote">
+        <button class="btn1">change quote</button>
+        <blockquote>
+          You were not born a winner, and you were not born a loser. You are what you make yourself be.
+        </blockquote>
+        <figcaption>
+          Lou Holtz
+        </figcaption>
+      </figure>
+    </div>
+
+    <h1>
+      <span class="greeting"></span>
+      <span class="name" contenteditable="true"></span>
+    </h1>
+    <h2>What Is Your Focus For Today?</h2>
+    <h3 class="focus" contenteditable="true"></h3>
+    <!--digital clock start-->
+
+      <div class="datetime">
+        <div class="date">
+          <span id="dayname">Day</span>,
+          <span id="month">Month</span>
+          <span id="daynum">00</span>,
+          <span id="year">Year</span>
+        </div>
+
+        <div class="time">
+          <span id="hour">00</span>:
+          <span id="minutes">00</span>:
+          <span id="seconds">00</span>
+          <span id="period">AM</span>
+        </div>
+        <div class="weather">
+
+          <div class="city" contenteditable="true">Минск</div>
+          <i class="weather-icon owf"></i>
+          <div class="temperature"></div>
+          <div class="weather-description"></div>
+          </div>
+          <button class="btn"> change   background  </button>
+
+      </div>
+    <!--digital clock end-->
+
+    <script src="script.js">
+
+    </script>
+
+  </body>
+</html>
