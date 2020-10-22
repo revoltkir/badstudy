@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  margin: 0, auto;
+  padding: 0;
+}
+
+body {
+  background-size: cover;
+  background-position: center center;
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-image 1s ease-in-out;
+  font-family: "Quicksand", sans-serif;
+}
+
+.datetime {
+  color: #fff;
+  background: #10101e;
+  font-family: "Segoe UI", sans-serif;
+  padding: 10px 30px;
+  border: 3px solid #2e94e3;
+  border-radius: 5px;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, rgba(255, 255, 255, 0.3));
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+}
+
+.datetime:hover {
+  background: #141114;
+  color: rgb(243, 59, 120);
+  border: 6px solid #2e94e3;
+  box-shadow: 0 0 40px #2e94e3;
+}
+
+.date {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time span:not(:last-child) {
+  position: relative;
+  margin: 0 6px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time span:last-child {
+  display: none;
+  background: #2e94e3;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+.btn {
+  padding: 0px 25px;
+  height: 20px;
+  color: #fff;
+  border: 0;
+  background: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(70%);
+
+  margin: 0px;
+}
+.btn:hover {
+  transform: scale(1.07);
+  color: rgb(65, 110, 235);
+  filter: drop-shadow(0px 0px 4px rgb(156, 156, 156));
+}
+.btn:active,
+.btn:focus {
+  outline: 0;
+}
+.btn:active {
+  transform: scale(1.2);
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+h3 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+}
+h1 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.focus {
+  text-align: center;
+}
+
+.focus:hover {
+  border: 2px solid rgba(240, 8, 182, 0.4);
+}
+
+@media (max-width: 700px) {
+  .date {
+    font-size: 1rem;
+  }
+  .time {
+    font-size: 2.2rem;
+  }
+  .btn {
+    font-size: 0.7rem;
+  }
+  h1,
+  h2,
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+figure {
+  margin: 0;
+}
+blockquote {
+  margin: 10px;
+}
+.quote {
+  font: 1.2rem Georgia, serif;
+
+  padding: 0;
+  color: rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.3);
+
+  border-radius: 1em;
+}
+
+.quote figcaption {
+  text-align: right;
+  color: rgb(100, 1, 100);
+  font-weight: 700;
+  padding: 10px;
+}
+.btn1 {
+  margin: 10px 0px 0px 10px;
+  height: 30px;
+  color: white;
+  padding: 0px 35px;
+  border: 0;
+  background: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(70%);
+}
+.qq {
+  margin: 0, auto;
+}
+.btn1:hover {
+  transform: scale(1.07);
+  color: rgb(255, 255, 255);
+  filter: drop-shadow(2px 2px 2px rgb(124, 4, 4));
+}
+.btn1:active,
+.btn1:focus {
+  outline: 0;
+}
+.btn1:active {
+  transform: scale(1.2);
+}
+.weather{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
+}
+.weather-icon {
+  font-size: 30px;
+  color: #a0dfff;
+}
+.weather-icon:hover {
+  animation: shake 1.5s;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+}
